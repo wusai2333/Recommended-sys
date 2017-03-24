@@ -1,0 +1,21 @@
+import gzip
+import collections
+def readGz(f):
+    for l in gzip.open(f):
+        yield l
+data = list(readGz('movies.txt.gz'))
+reviewtxt = []
+scores = []
+head = [next(readGz('movies.txt.gz')) for x in range(100000)]
+print (head)
+
+users = collections.
+for l in head:
+    reviewtxt.append(l['review/text'])
+    scores.append(l['review/score'])
+    print(l['review/text'])
+f = open('movies.txt.gz','r')
+while True:
+    text = f.readline()
+    if 'rawr' in text:
+        print text
